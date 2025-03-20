@@ -35,7 +35,9 @@ We carefully configure hyperparameters such as learning rate, batch size, and op
 
 - The training process is monitored using two key metrics:
   - **Training Loss:** `/finetuning/training_loss.png` (indicates how well the model is learning from the data)
+    ![Training Loss](finetuning/training_loss.png)
   - **Evaluation Loss:** `/finetuning/training_eval_loss.png` (measures how well the model generalizes to unseen validation data)
+    ![Evaluation Loss](finetuning/training_eval_loss.png)
 
 #### Why is this step important?
 - **Enhancing Model Performance**: Fine-tuning adapts the pre-trained LLaMA model to our English-to-Arabic dataset, improving its translation accuracy.
@@ -62,7 +64,8 @@ python evaluation_base_model.py      # Evaluate the base model (LLaMA 3.2 3B)
 | **Fine-Tuned Model** | 0.5771      | 0.8620                    |
 
 - Some inference results are added
-   - **Training Loss:** `/finetuning/result.png`
+   - **Inference result:** `/finetuning/result.png`
+      ![Inference Result](finetuning/result.png)
 
 #### Why is this step important?
 - **BLEU Score**: Measures how closely the generated translations match reference translations. A higher BLEU score indicates better accuracy.
